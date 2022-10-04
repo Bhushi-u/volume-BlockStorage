@@ -1,0 +1,36 @@
+# Attach 5gb volume to instance
+...Command
+fdisk -l
+    3  mkfs -t ext4 /dev/xvdf
+    4  lsblk
+    5  cd /mnt
+    6  ls -ltr
+    7  df -h
+    8  mount /dev/xvdf /mnt
+    9  df -h
+   10  midir abc xyz prq
+   11  mkdir abc xyz pqr
+   12  ls -ltr
+   13  cd abc
+   14  touch a b c
+   15  cd ..
+   16  cd xy
+   17  cd xyz
+   18  ls -ltr
+   19  df -h
+   20  cd ..
+   21  umount /dev/xvdf
+   22  cd mnt
+   23  df -h
+   24  fdisk -l
+
+At Volume 
+ - Create Volume
+ - Attach Volume
+ - Make File system = mkfs
+ - mount to it folder = mount
+ - Add Data
+ - Work complete, umount it
+ - Volume Detach
+ - Volume Delete
+ so, it remove from instance.
